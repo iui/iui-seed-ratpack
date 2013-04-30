@@ -4,8 +4,12 @@ iui-seed-ratpack
 iUI Seed Project using Ratpack project template
 -----------------------------------------------
 
-This is a prototype "seed" iUI project that uses iUI on the front-end and Ratpack on the backend.
+This is a prototype "seed" project that uses [iUI](http://www.iui-js.org) on the client and [Ratpack](https://github.com/ratpack/ratpack) on the server.
 
+Created using the [Ratpack template](https://github.com/pledbrook/lazybones/tree/master/src/templates/ratpack) from [Lazybones](https://github.com/pledbrook/lazybones)
+
+Boilerplate README from the Lazybones Template
+----------------------------------------------
 We have set you up with a standard project structure, a
 simple home page, and Spock for writing tests (because you'd be mad not to
 use it).
