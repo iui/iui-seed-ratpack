@@ -1,8 +1,12 @@
-Ratpack project template
------------------------------
+iui-seed-ratpack
+================
 
-You have just created a basic Groovy Ratpack application. It doesn't do much
-at this point, but we have set you up with a standard project structure, a
+iUI Seed Project using Ratpack project template
+-----------------------------------------------
+
+This is a prototype "seed" iUI project that uses iUI on the front-end and Ratpack on the backend.
+
+We have set you up with a standard project structure, a
 simple home page, and Spock for writing tests (because you'd be mad not to
 use it).
 
