@@ -7,4 +7,9 @@ import org.ratpackframework.groovy.app.Routing
 		response.redirect('index.html')
 	}
 
+    get('/search') { Request request, Response response ->
+        def artist = request.queryParams.artist[0] ?: "Artist"
+        def song = request.queryParams.song[0] ?: "Song"
+        response.render "search.html", artist: artist, song: song
+    }
 }
