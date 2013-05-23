@@ -34,8 +34,10 @@ dependencies {
     // It is not part of the app runtime and is not shipped in the distribution.
     springloaded "org.springsource.springloaded:springloaded-core:1.1.1"
 }
+mainClassName = "org.iuijs.ratpack.Main"
 
 run {
+    workingDir = project.file(".")
     jvmArgs "-Dratpack.port=8080"
     systemProperty "ratpack.reloadable", "true"
 }
