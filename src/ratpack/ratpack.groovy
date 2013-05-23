@@ -1,15 +1,20 @@
-import org.ratpackframework.app.*
-import org.ratpackframework.groovy.app.Routing
+import org.ratpackframework.groovy.templating.TemplateRenderer
+import static org.ratpackframework.groovy.RatpackScript.ratpack
 
-(this as Routing).with {
+ratpack {
+    handlers {
+        get {
+            response.redirect('index.html')
+        }
 
-	get('/') { Request request, Response response ->
-		response.redirect('index.html')
-	}
+        get("search") {
+            def artist = request.queryParams.artist[0] ?: "Artist"
+            def song = request.queryParams.song[0] ?: "Song"
+            get(TemplateRenderer).render "search.html", artist: artist, song: song
+        }
 
-    get('/search') { Request request, Response response ->
-        def artist = request.queryParams.artist[0] ?: "Artist"
-        def song = request.queryParams.song[0] ?: "Song"
-        response.render "search.html", artist: artist, song: song
+        assets "public"
     }
 }
+
+
