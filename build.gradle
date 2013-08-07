@@ -43,7 +43,3 @@ run {
 applicationDistribution.from(run.workingDir) {
     include 'public/**', 'templates/**', 'ratpack.groovy'
 }
-
-task wrapper(type: Wrapper) {
-  gradleVersion = '1.6'
-}
