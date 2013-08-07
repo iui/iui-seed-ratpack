@@ -1,4 +1,4 @@
-import org.ratpackframework.groovy.templating.TemplateRenderer
+import static org.ratpackframework.groovy.templating.Template.groovyTemplate
 import static org.ratpackframework.groovy.RatpackScript.ratpack
 
 ratpack {
@@ -8,9 +8,9 @@ ratpack {
         }
 
         get("search") {
-            def artist = request.queryParams.artist[0] ?: "Artist"
-            def song = request.queryParams.song[0] ?: "Song"
-            get(TemplateRenderer).render "search.html", artist: artist, song: song
+            def artist = request.queryParams?.artist ?: "Artist"
+            def song = request.queryParams?.song ?: "Song"
+            render groovyTemplate("search.html", artist: artist, song: song)
         }
 
         assets "public"
