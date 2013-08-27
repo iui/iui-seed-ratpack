@@ -1,4 +1,4 @@
-import static org.ratpackframework.groovy.templating.Template.groovyTemplate
+import static org.ratpackframework.groovy.Template.groovyTemplate
 import static org.ratpackframework.groovy.RatpackScript.ratpack
 
 ratpack {
