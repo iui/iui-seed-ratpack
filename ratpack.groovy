@@ -3,9 +3,6 @@ import static org.ratpackframework.groovy.RatpackScript.ratpack
 
 ratpack {
     handlers {
-        get {
-            response.redirect('index.html')
-        }
 
         get("search") {
             def artist = request.queryParams?.artist ?: "Artist"
@@ -13,7 +10,7 @@ ratpack {
             render groovyTemplate("search.html", artist: artist, song: song)
         }
 
-        assets "public"
+        assets "public", "index.html"
     }
 }
 
