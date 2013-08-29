@@ -43,5 +43,6 @@ run {
 }
 
 applicationDistribution.from(run.workingDir) {
+    into("app")
     include 'public/**', 'templates/**', 'ratpack.groovy'
 }
