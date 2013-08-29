@@ -18,6 +18,8 @@ repositories {
 // See: http://gradle.org/docs/current/userguide/application_plugin.html
 apply plugin: "ratpack-groovy"
 
+applicationName = "iui-seed"
+
 // The “ratpack” plugin is IDEA aware.
 // It will create a run configuration in IDEA to launch your app in your IDE, with hot reloading.
 apply plugin: "idea"
