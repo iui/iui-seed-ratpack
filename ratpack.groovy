@@ -1,5 +1,5 @@
-import static org.ratpackframework.groovy.Template.groovyTemplate
-import static org.ratpackframework.groovy.RatpackScript.ratpack
+import static ratpack.groovy.Groovy.groovyTemplate
+import static ratpack.groovy.Groovy.ratpack
 
 ratpack {
     handlers {
