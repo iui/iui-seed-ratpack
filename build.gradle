@@ -33,7 +33,7 @@ idea {
 dependencies {
     // SpringLoaded enables runtime hot reloading.
     // It is not part of the app runtime and is not shipped in the distribution.
-    springloaded "org.springsource.springloaded:springloaded-core:1.1.1"
+    springloaded "org.springsource.springloaded:springloaded-core:1.1.4"
 }
 
 run {
